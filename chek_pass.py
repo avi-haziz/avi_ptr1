@@ -38,7 +38,7 @@ def validate_password(password):
         if (ord(char2) == ord(char1) + 1 and ord(char3) == ord(char2) + 1):
             # print(f"שגיאה: רצף עולה אסור ({char1}{char2}{char3}).")
             return False
-        # בדיקה לרצפים יורדים (cba, 321) - פחות נפוץ לבדוק אבל אפשרי
+        # בדיקה לרצפים יורדים (cba, 321)
         if (ord(char2) == ord(char1) - 1 and ord(char3) == ord(char2) - 1):
             # print(f"שגיאה: רצף יורד אסור ({char1}{char2}{char3}).")
             return False
